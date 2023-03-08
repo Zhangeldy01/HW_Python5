@@ -12,8 +12,8 @@ def power(a, b):
         return 1 / power(a, -b)
     if b % 2 == 0:
         return power(a, b // 2) * power(a, b // 2)
-    else:
-        return power(a, b - 1) * a
+
+    return power(a, b - 1) * a
 
 a = int(input('Введите число А: '))
 b = int(input('Введите число В: '))
